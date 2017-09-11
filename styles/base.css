@@ -71,7 +71,7 @@ textarea{
   overflow-y: auto;
 	background:#d3d3d3;
 }
-button{
+#button, #button2{
 	box-sizing: border-box;
 	width:60vw;
 	height:4vh;
@@ -81,6 +81,8 @@ button{
 	border-radius:1vh;
 	box-shadow:0 0 16px black;
 	margin:auto;
-	display:none;
 	font-size:1.3em;
+}
+#button{
+	display:none;
 }

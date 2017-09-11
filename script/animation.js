@@ -1,5 +1,7 @@
 $(function(){
-
+  $('#button2').click(function() {
+      location.reload();
+  });
   $("#text").keydown(function(){
 
     $("#text").keyup(function(){
