@@ -17,16 +17,20 @@ function textAnalyzer() {
   // Character count without white spaces.
   var characterWithoutWhiteSpace = characterCount - whiteSpaceCount;
 
+  // Most occuring character.
+  var mostOccurringCharacter = getMostOccurringChar(text);
+
   // Returning JSON-object.
   var jsonobject = {
+    text: text,
     wordCount: wordList.length,
     characterCount: characterCount,
     whiteSpaceCount: whiteSpaceCount,
     characterWithoutWhiteSpace: characterWithoutWhiteSpace,
     wordList: wordList,
+    mostOccurringCharacter: mostOccurringCharacter
   };
 
-  console.log(jsonobject);
 
   return jsonobject;
 }
@@ -73,4 +77,40 @@ function countWhiteSpaces(text) {
   }
 
   return whiteSpaceCounter;
+}
+
+function getMostOccurringChar(text) {
+  var charCounts = {};
+
+  // Count every character and update charCounts.
+  var focusChar;
+  for(var i = 0; i < text.length; i++) {
+    focusChar = text.charAt(i);
+
+    if(focusChar == ' '){ // If focusChar is space, then continue.
+      continue;
+    } else if(charCounts[focusChar]) { // If focusChar is already mapped.
+      charCounts[focusChar]++;
+    }else{ // If focusChar is not mapped.
+      charCounts[focusChar] = 1;
+    }
+  }
+
+  // Find most occurred.
+  var mostOccurredChar = '';
+  var maxCount = 0;
+  for(var char in charCounts) {
+    if(charCounts[char] > maxCount) {
+      mostOccurredChar = char;
+      maxCount = charCounts[char];
+    }
+  }
+
+  // Wrap result in an object.
+  var result = {
+    mostOccurredChar: mostOccurredChar,
+    count: maxCount
+  }
+
+  return result;
 }
