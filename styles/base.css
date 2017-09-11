@@ -1,5 +1,4 @@
 /*Genereated by fenix 0.1.0*/
-
 body{
 	color:white;
 	font-family: 'Pacifico', sans-serif;
@@ -8,10 +7,9 @@ body{
 	height:100vh;
 	max-height:100vh;
   background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, orange, yellow); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, orange, yellow); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, orange, yellow); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #3f51b5, #00ff93); /* Standard syntax */
+  background: -webkit-linear-gradient(left top, #F3904F, #3b4371); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #F3904F, #3b4371); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #F3904F, #3b4371); /* For Firefox 3.6 to 15 */
 }
 nav{
 	width:100vw;
@@ -24,37 +22,35 @@ nav{
 	box-shadow:0 0 16px black;
 }
 nav h1{
-    font-weight:2.0em;
+  font-weight:bold;
+	font-size:2.0em;
 }
 #input_content{
 	width:100vw;
 	height:100vh;
 	text-align:center;
-
 	padding-top:20vh;
-		box-sizing:border-box;
+	box-sizing:border-box;
 }
 #result_list{
-    width:100vw;
-    height:100vh;
-    text-align:center;
-    padding-top:20vh;
-    box-sizing: border-box;
-
-    display:none;
+  width:100vw;
+  height:100vh;
+  text-align:center;
+  padding-top:20vh;
+  box-sizing: border-box;
+  display:none;
 }
 #resultTable{
-    width:60vw;
-    height:auto;
-
-    margin:auto;
+  width:60vw;
+  height:auto;
+  margin:auto;
 }
 #resultTable td{
-    text-align: left;
-    font-size:2em;
-    font-weight: bold;
-    text-shadow: 0 0 16px black;
-    font-family: "Courier New", sans-serif !important;
+  text-align: left;
+  font-size:2em;
+  font-weight: bold;
+  text-shadow: 0 0 10px black;
+  font-family: "Courier New", sans-serif !important;
 }
 textarea{
 	width:60vw;
@@ -63,29 +59,28 @@ textarea{
 	max-height:30vh;
 	min-width:60vw;
 	max-height:30vh;
-	border:1px solid white;
-	background:rgba(255, 255, 255,1);
-	display:inline;
 	text-align:center;
 	margin:auto;
-	border:1px solid white;
+	border:none;
 	border-radius:1vh;
-    box-shadow:0 0 16px black;
-    text-align: left;
-    padding:2vw;
-    box-sizing: border-box;
-    font-size:1.2em;
-    overflow-y: auto;
+  box-shadow:0 0 16px black;
+  text-align: left;
+  padding:2vw;
+  box-sizing: border-box;
+  font-size:1.2em;
+  overflow-y: auto;
+	background:#d3d3d3;
 }
 button{
 	box-sizing: border-box;
 	width:60vw;
 	height:4vh;
-	display:inline;
 	color:white;
-	background:#2f81cf;
-	border:1px solid blue;
+	background:#1a9275;
+	border:none;
 	border-radius:1vh;
 	box-shadow:0 0 16px black;
-
+	margin:auto;
+	display:none;
+	font-size:1.3em;
 }
