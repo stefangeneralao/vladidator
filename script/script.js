@@ -14,11 +14,15 @@ function textAnalyzer() {
   // White space count.
   var whiteSpaceCount = countWhiteSpaces(text);
 
+  // Character count without white spaces.
+  var characterWithoutWhiteSpace = characterCount - whiteSpaceCount;
+
   // Returning JSON-object.
   var jsonobject = {
     wordCount: wordList.length,
     characterCount: characterCount,
     whiteSpaceCount: whiteSpaceCount,
+    characterWithoutWhiteSpace: characterWithoutWhiteSpace,
     wordList: wordList,
   };
 
