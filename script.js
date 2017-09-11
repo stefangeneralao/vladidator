@@ -1,6 +1,5 @@
-function textAnalyzer() {
-  var text = document.getElementById("text").value;
-  var wordCount = 1;
+function textAnalyzer(text) {
+  var wordCount = 0;
   var charCount = text.length;
 
   for(var i = 0; i < text.length; i++) {
@@ -9,6 +8,5 @@ function textAnalyzer() {
     }
   }
 
-  console.log({wordCount: wordCount, characterCount: charCount});
   return {wordCount: wordCount, characterCount: charCount};
 }
