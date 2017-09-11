@@ -1,6 +1,62 @@
 /*Genereated by fenix 0.1.0*/
 
 body{
+	color:white;
+	font-family: 'Pacifico', sans-serif;
 	margin:0;
+	box-sizing:border-box;
+	height:100vh;
+	max-height:100vh;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, orange, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, orange, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, orange, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #3f51b5, #00ff93); /* Standard syntax */
+}
+nav{
+	width:100vw;
+	height:8vh;
+	background:white;
+	position:fixed;
+	border-bottom:3px solid white;
+	text-align: center;
+	color:black;
+	box-shadow:0 0 16px black;
+}
+.input_content{
+	width:100vw;
+	height:100vh;
+	text-align:center;
+
+	padding-top:20vh;
+		box-sizing:border-box;
+}
+textarea{
+	width:60vw;
+	height:30vh;
+	max-width:60vw;
+	max-height:30vh;
+	min-width:60vw;
+	max-height:30vh;
+	border:1px solid white;
+	background:rgba(255, 255, 255,1);
+	display:inline;
+	text-align:center;
+	margin:auto;
+	border:1px solid white;
+	border-radius:1vh;
+			box-shadow:0 0 16px black;
+
+}
+button{
+	box-sizing: border-box;
+	width:60vw;
+	height:4vh;
+	display:inline;
+	color:white;
+	background:#2f81cf;
+	border:1px solid blue;
+	border-radius:1vh;
+	box-shadow:0 0 16px black;
 
 }
