@@ -17,9 +17,31 @@
 		<nav id="banner">
 			<h2>Wordcounter</h2>
 		</nav>
-		<div class="input_content">
+		<div id="input_content">
 			<textarea id="text"></textarea>
 			<button id="button" type="button" onclick='textAnalyzer()'>Count</button>
 		</div>
+        <div id="result_list">
+            <table id="resultTable">
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Words</td>
+                        <td id="wordCount"></td>
+                    </tr>
+                    <tr>
+                        <td> Characters</td>
+                        <td id="charCount" ></td>
+                    </tr>
+                    <tr>
+                        <td> whiteSpaceCount </td>
+                        <td id="whiteSpaceCount"></td>
+                    </tr>
+                </tbody>
+                </tfoot>
+                </tfoot>
+            </table>
+        </div>
 	</body>
 </html>

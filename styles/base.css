@@ -26,13 +26,35 @@ nav{
 nav h1{
     font-weight:2.0em;
 }
-.input_content{
+#input_content{
 	width:100vw;
 	height:100vh;
 	text-align:center;
 
 	padding-top:20vh;
 		box-sizing:border-box;
+}
+#result_list{
+    width:100vw;
+    height:100vh;
+    text-align:center;
+    padding-top:20vh;
+    box-sizing: border-box;
+
+    display:none;
+}
+#resultTable{
+    width:60vw;
+    height:auto;
+
+    margin:auto;
+}
+#resultTable td{
+    text-align: left;
+    font-size:2em;
+    font-weight: bold;
+    text-shadow: 0 0 16px black;
+    font-family: "Courier New", sans-serif !important;
 }
 textarea{
 	width:60vw;
@@ -48,8 +70,12 @@ textarea{
 	margin:auto;
 	border:1px solid white;
 	border-radius:1vh;
-			box-shadow:0 0 16px black;
-
+    box-shadow:0 0 16px black;
+    text-align: left;
+    padding:2vw;
+    box-sizing: border-box;
+    font-size:1.2em;
+    overflow-y: auto;
 }
 button{
 	box-sizing: border-box;
