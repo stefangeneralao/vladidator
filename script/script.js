@@ -15,7 +15,7 @@ function textAnalyzer() {
   var whiteSpaceCount = countWhiteSpaces(text);
 
   // Character count without white spaces.
-  var characterCountWithoutWhiteSpace = characterCount - whiteSpaceCount;
+  var characterCountNoWhiteSpace = characterCount - whiteSpaceCount;
 
   // Most occuring character.
   var mostOccurringCharacter = getMostOccurringChar(text);
@@ -26,7 +26,7 @@ function textAnalyzer() {
     wordCount: wordList.length,
     characterCount: characterCount,
     whiteSpaceCount: whiteSpaceCount,
-    characterCountWithoutWhiteSpace: characterCountWithoutWhiteSpace,
+    characterCountNoWhiteSpace: characterCountNoWhiteSpace,
     wordList: wordList,
     mostOccurringCharacter: mostOccurringCharacter
   };
@@ -111,5 +111,5 @@ function getMostOccurringChar(text) {
     count: maxCount
   }
 
-  return result;
+  return mostOccurredChar;
 }

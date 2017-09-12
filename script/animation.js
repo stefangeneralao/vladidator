@@ -24,9 +24,13 @@ $(function(){
       var charCount = result.characterCount;
       var whiteSpaceCount = result.whiteSpaceCount;
       var wordList = result.wordList;
+      var characterCountNoWhiteSpace = result.characterCountNoWhiteSpace;
+      var mostOccurringCharacter = result.mostOccurringCharacter;
       $("#wordCount").text(wordCount);
       $("#charCount").text(charCount);
+      $("#characterCountNoWhiteSpace").text(characterCountNoWhiteSpace);
       $("#whiteSpaceCount").text(whiteSpaceCount);
+      $("#mostOccurringCharacter").text(mostOccurringCharacter);
       $("#result_list").slideToggle(500,function(){
       });
     });
