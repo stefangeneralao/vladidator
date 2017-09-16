@@ -1,24 +1,8 @@
 $(function(){
-  $('#button2').click(function() {
-      location.reload();
-  });
   $("#text").keydown(function(){
-
     $("#text").keyup(function(){
-
-      value = $("#text").val();
-      console.log(value.length+1)
-      if(value.length > 0){
-        $("#button").fadeIn(500);
-      }
-      else if(value.length == 0){
-        $("#button").fadeOut(500)
-      }
-    })
-  })
-
-  $("#button").click(function(){
-    $("#input_content").fadeOut(500,function(){
+      loader = document.getElementById('loader');
+      loader.style.opacity = "1";
       var result = textAnalyzer();
       var wordCount = result.wordCount;
       var charCount = result.characterCount;
@@ -31,8 +15,9 @@ $(function(){
       $("#characterCountNoWhiteSpace").text(characterCountNoWhiteSpace);
       $("#whiteSpaceCount").text(whiteSpaceCount);
       $("#mostOccurringCharacter").text(mostOccurringCharacter);
-      $("#result_list").slideToggle(500,function(){
-      });
-    });
-  });
-});
+      setTimeout(function(){
+        loader.style.opacity = "0";
+      },1000);
+    })
+  })
+})
